@@ -381,7 +381,7 @@ typedef NS_OPTIONS(NSUInteger, JPAuthorizationOptions) {
  默认值为 10 ，iOS系统默认地理围栏最大个数为20
  @param count 个数 count
  */
-+ (void)setGeofenecMaxCount:(NSInteger)count;
++ (void)setGeofenceMaxCount:(NSInteger)count;
 /**
  注册地理围栏的代理
 

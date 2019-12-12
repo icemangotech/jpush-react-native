@@ -314,7 +314,7 @@ export default class JPush {
         if (Platform.OS == "android") {
             JPushModule.setMaxGeofenceNumber(params)
         } else {
-            JPushModule.setGeofenecMaxCount(params)
+            JPushModule.setGeofenceMaxCount(params)
         }
     }
 
@@ -405,7 +405,7 @@ export default class JPush {
     * extras:对应 Portal 推送消息界面上的“可选设置”里的附加字段
     *
     * */
-    static addCustomMessagegListener(callback) {
+    static addCustomMessageListener(callback) {
         listeners[callback] = DeviceEventEmitter.addListener(
             CustomMessageEvent, result => {
                 callback(result)
@@ -557,7 +557,7 @@ export default class JPush {
         if (Platform.OS == "android") {
             JPushModule.setChannel(params)
         } else {
-            // setupWithOpion
+            // setupWithOption
         }
     }
 
